@@ -2,13 +2,13 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Задание 1.1");
         int total1 = 0;
-        int i = 0;
-        for (i = 1; total1 <= 2459000; i++) {
+        for (int  i = 1; total1 <= 2459000; i++) {
             total1 = total1 + total1 / 100;
             total1 = total1 + 15000;
-        }
-        System.out.println("Месяц " + i + ", сумма накоплений равна " + total1 + " рублей.");
 
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + total1 + " рублей.");
+        }
+        // здесь имеется ввиду, что первая сумма вносится после первого месяца, а процент начинает начисляться со второго месяца.
         System.out.println("Задание 1.2");
         int o = 0;
         while (10 > o) {
@@ -16,9 +16,9 @@ public class Main {
         System.out.print(o + " ");
     }
         System.out.println(" ");
-        for (o = 10; o >= 1; o = o - 1) {
+        for (o = 10; o >= 1; o --) {
             System.out.print(o + " ");
-        }
+                    }
         System.out.println(" ");
         System.out.println("Задание 1.3");
         int population = 12000000;
@@ -52,9 +52,9 @@ public class Main {
             }
         }
             System.out.println("Задание 2.4");
-            int frayday = 4;
-            for (frayday = frayday; frayday <= 31; frayday = frayday + 7) {
-                System.out.println("Сегодня пятница " + frayday + "-е число. Необходимо подготовить отчет.");
+            int friday = 4;
+            for (; friday <= 31; friday = friday + 7) {
+                System.out.println("Сегодня пятница " + friday + "-е число. Необходимо подготовить отчет.");
             }
         System.out.println("Задание 3.1");
             int currentYear = 2022;
